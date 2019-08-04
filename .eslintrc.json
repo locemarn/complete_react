@@ -7,8 +7,7 @@
   "extends": ["standard", "standard-react", "prettier"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly",
-    "it": "readonly"
+    "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,6 +21,10 @@
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "semi": "error",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "react/prop-types": [
+      "enabled",
+      { "ignore": "ignore", "customValidators": "customValidator" }
+    ]
   }
 }
